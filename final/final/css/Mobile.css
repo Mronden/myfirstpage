@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+body,html {
+    height: 100%;
+}
+.top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    z-index: 9999;
+    box-shadow: 0 0 5px 0 gainsboro;
+}
+.top-img{
+    float: left;
+    height: 35px;
+    width: 125px;
+    background-image: url('http://y.gtimg.cn/mediastyle/mod/mobile/img/logo_ch.svg?max_age=2592000');
+    background-size: 125px;
+    position: relative;
+    top: 22px;
+    left: 14px;
+}
+.top-down{
+    float: left;
+    height: 27px;
+    width: 78px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 27px;
+    margin-left: 165px;
+    margin-top: 27px;
+    text-align: center;
+    line-height: 27px;
+}
+.top-down>a{
+    color: black;
+}
+.nav{
+    margin-top: 80px;
+    /*height: 40px;*/
+    height: 100%;
+    width: 100%;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: space-around;
+}
+.nav-ipt{
+    height: 0;
+    width: 0;
+}
+.nav-l{
+    height: 40px;
+    width: 30%;
+    text-align: center;
+    line-height: 40px;
+}
+.nav-m{
+    height: 40px;
+    width: 40%;
+    text-align: center;
+    line-height: 40px;
+}
+.nav-r{
+    height: 40px;
+    width: 30%;
+    text-align: center;
+    line-height: 40px;
+}
+.content-one{
+    height: 1360px;
+    width: 333%;
+    background-color: #F4F4F4;
+    display: none;
+}
+.content-two{
+    height: 1200px;
+    width: 251%;
+    background-color: #F4F4F4;
+    margin-left: -76%;
+    display: none;
+}
+.content-thr{
+    height: 1200px;
+    width: 333%;
+    background-color: aqua;
+    margin-left: -234%;
+    display: none;
+}
+.ipt1:checked~.content-one{
+    display: block;
+}
+.ipt2:checked~.content-two{
+    display: block;
+}
+.ipt3:checked~.content-thr{
+    display: block;
+}
+.content-one>img{
+    height: 150px;
+    width: 100%;
+}
+.diantai{
+    height: 24px;
+    margin-top: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+h2{
+    margin-left: -320px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -9px;
+}
+.diantai-detail{
+    height: 215px;
+    width: 100%;
+    margin-top: 10px;
+}
+.detail-left{
+    margin-left: 10px;
+    float: left;
+    height: 215px;
+    width: 45%;
+    background-color: white;
+}
+.detail-right {
+    margin-left: 15px;
+    float: left;
+    height: 215px;
+    width: 45%;
+    background-color: white;
+}
+.img-detail{
+    width: 100%;
+    height: 174px;
+}
+.xxdetail{
+    width: 100%;
+    height: 40px;
+    margin-top: -14px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+}
+.list{
+    height: 24px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 21px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.list-detail{
+    height: 688px;
+    width: 100%;
+    margin-top: 15px;
+}
+.list-detail-li{
+    float:left;
+    height: 222px;
+    width: 51%;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: white;
+}
+.left{
+    margin-left: -30px;
+}
+.right{
+    margin-left: 12px;
+}
+.list-li-img{
+    width: 100%;
+    height: 174px;
+}
+.li-p1{
+    width: 100%;
+    height: 21px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -8px;
+    font-size: 14px;
+}
+.li-p2{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+}
+.posite1{
+    height: 12px;
+    width: 80px;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+}
+.posite2{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 145px;
+    right: 5px;
+    background-image: url('https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/list_sprite.png?max_age=2592000&v=bf901360b97d78b972786e4e8ece5218');
+    background-position: 0 0;
+    background-size:24px 60px ;
+}
+.icon{
+    float: left;
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-image: url('https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/list_sprite.png?max_age=2592000&v=bf901360b97d78b972786e4e8ece5218');
+    background-size:24px 60px ;
+    background-position: 0 -50px;
+}
+.hot{
+    margin-left: 5px;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height:10px;
+    width: 54px;
+    line-height: 11px;
+    color: white;
+}
+.footer{
+    height: 154px;
+    width: 100%;
+}
+.footer1{
+    height: 20px;
+    width: 100%;
+    margin-top: 30px;
+    line-height: 15px;
+    font-size: 14px;
+}
+.footer2{
+    height: 24px;
+    width: 100%;
+    margin-top: 15px;
+}
+.footer2-icon{
+    display: block;
+    margin: 0 auto;
+    width: 84px;
+    height: 24px;
+    background-image: url('https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/logo_footer.png?max_age=2592000&v=0b997108f6088df4b8f515bf4d4869cb');
+    background-size:cover;
+}
+.footer3{
+    height: 15px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 10px;
+    line-height: 12px;
+}
+.footer4{
+    height: 15px;
+    width: 100%;
+    font-size: 10px;
+    line-height: 12px;
+}
+.boto{
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    height: 65px;
+    width: 100%;
+    margin-top: 19px;
+    background-color: white;
+}
+.booto{
+    height: 33px;
+    width: 50%;
+    background-color: #30C27C;
+    margin-left: 88px;
+    margin-top: 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    line-height: 33px;
+    text-align: center;
+}
+.lst{
+    height: 100px;
+    width: 95%;
+    margin:10px;
+    background-color: white;
+}
+.lst-img{
+    float: left;
+    height: 100px;
+}
+.lst-div{
+    position: relative;
+    float: left;
+    height: 100px;
+    width: 68%;
+    margin-left: 3.9%;
+}
+h3{
+    font-size: 16px;
+    font-weight: 400;
+    height: 20px;
+    text-align: left;
+    line-height: 20px;
+}
+p{
+    margin-top: 5px;
+    height: 20px;
+    text-align: left;
+    line-height: 20px;
+    font-size: 14px;
+}
+.icon{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 0;
+    top: 26px;
+    color:#7F7F7F ;
+}
+
+
+
+
+
